@@ -46,7 +46,7 @@ class MyHomePage extends StatefulWidget {
                     : Icon(Icons.star_border, size: _size, color: Colors.grey),
               onPressed: () {
                 setState(() {
-                  _rating = 2;
+                  _rating = 1;
                 },
                 );
               },
@@ -54,12 +54,12 @@ class MyHomePage extends StatefulWidget {
             ),
             Container(
               child: IconButton(
-                icon: (_rating >= 1)
+                icon: (_rating >= 2)
                     ? Icon(Icons.star, size: _size, color: Colors.amber)
                     : Icon(Icons.star_border, size: _size, color: Colors.grey),
               onPressed: () {
                 setState(() { 
-                  _rating = 1;
+                  _rating = 2;
                 },
                 );
               },
@@ -67,12 +67,12 @@ class MyHomePage extends StatefulWidget {
             ),
             Container(
               child: IconButton(
-                icon: (_rating >= 1)
+                icon: (_rating >= 3)
                     ? Icon(Icons.star, size: _size, color: Colors.amber)
                     : Icon(Icons.star_border, size: _size, color: Colors.grey),
               onPressed: () {
                 setState(() { 
-                  _rating = 1;
+                  _rating = 3;
                 },
                 );
               },
